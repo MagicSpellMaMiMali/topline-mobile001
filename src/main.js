@@ -1,9 +1,14 @@
 import Vue from 'vue'
 import App from './App.vue'
-import router from './router/router'
+import router from './router'
 import store from './store'
+import vant from 'vant'
+import 'vant/lib/index.css'
+import axios from 'axios'
 
 Vue.config.productionTip = false
+Vue.use(vant)
+Vue.use(axios)
 
 new Vue({
   router,
